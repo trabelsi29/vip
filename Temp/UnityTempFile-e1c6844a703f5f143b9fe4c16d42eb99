@@ -287,3 +287,5 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 Assets\scripts\changeColorText.cs
+Assets\scripts\NewBehaviourScript.cs
+Assets\scripts\SceneLoader.cs

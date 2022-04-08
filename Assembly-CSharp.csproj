@@ -55,7 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\BGSoundScript.cs" />
      <Compile Include="Assets\scripts\changeColorText.cs" />
+     <Compile Include="Assets\scripts\SceneLoader.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/trabe/OneDrive/Documents/GitHub/vip/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
