@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\BGSoundScript.cs" />
      <Compile Include="Assets\scripts\changeColorText.cs" />
      <Compile Include="Assets\scripts\chargement_jeu.cs" />
+     <Compile Include="Assets\scripts\MicrophoneIn.cs" />
      <Compile Include="Assets\scripts\PlayerMovement.cs" />
      <Compile Include="Assets\scripts\SceneLoader.cs" />
      <Compile Include="Assets\scripts\test.cs" />
