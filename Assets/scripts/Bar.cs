@@ -22,8 +22,5 @@ public class Bar : MonoBehaviour
     public void AnimateBar(){
         LeanTween.scaleX(bar, 1, time);
     }
-    /*
-    void SHowMessage(){
-        timeUpMessage.SecActive(true);
-    }*/
+
 }

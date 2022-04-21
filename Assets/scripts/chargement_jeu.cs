@@ -17,7 +17,7 @@ IEnumerator ChangeAfter2SecondsCoroutine()
     Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
     //yield on a new YieldInstruction that waits for 4 seconds.
-    yield return new WaitForSeconds(4);
+    yield return new WaitForSeconds(3);
 
 
     //And load the scene
