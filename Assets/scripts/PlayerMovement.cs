@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private Vector3 velocity = Vector3.zero;
     public SpriteRenderer spriteRenderer;
+    //public float JumpForce = 100;
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
@@ -18,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
         Flip(rb.velocity.x);
         float characterVelocity = Mathf.Abs(rb.velocity.x); //renvoyer toujours une valeur positive de la vitesse
         animator.SetFloat("speed", characterVelocity);
+
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+        {
+            rb.AddForce( new Vector2 (0, 5), ForceMode2D.Impulse);
+        }
     
     }
 
