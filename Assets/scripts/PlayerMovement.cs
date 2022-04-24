@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
         {
-            rb.AddForce( new Vector2 (0, 5), ForceMode2D.Impulse);
+            rb.AddForce( new Vector2 (0, 24), ForceMode2D.Impulse);
         }
     
     }

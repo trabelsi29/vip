@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: 4342699810482728297
     second: perso_princ 1_2
+  - first:
+      213: -1500107777277131826
+    second: perso_princ 1_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -100,11 +103,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 127
+        width: 200
         height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 16, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -119,13 +122,13 @@ TextureImporter:
       name: perso_princ 1_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 187
         y: 0
         width: 200
         height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 7, y: 0, z: 26, w: 0}
+      border: {x: 7, y: 0, z: 14, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -146,13 +149,34 @@ TextureImporter:
         height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 21, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bc73f3b73e0be5f4c9ed1af96cf6a96a
       internalID: 4342699810482728297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_princ 1_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 105
+        width: 81
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88412fc1a870bd14f9a59ddf4e9249fe
+      internalID: -1500107777277131826
       vertices: []
       indices: 
       edges: []
