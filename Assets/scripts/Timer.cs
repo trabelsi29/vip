@@ -15,9 +15,11 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKey(KeyCode.H))
+          if (Input.GetKey(KeyCode.H))
      {
+         
         totaltime = totaltime - Time.deltaTime;
+
         if ( totaltime > 0)
         {
        
@@ -29,8 +31,15 @@ public class Timer : MonoBehaviour
          timerText.text = "5";
          timerImage.fillAmount = 1;
          totaltime = 5;
+     }}
+     else 
+     {
+          timerText.text = "5";
+         timerImage.fillAmount = 1;
+         totaltime = 5;
+
      }
         
     }
-    }
+    
 }
