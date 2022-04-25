@@ -98,13 +98,16 @@
      <Compile Include="Assets\scripts\CharacterDB.cs" />
      <Compile Include="Assets\scripts\CharacterManager.cs" />
      <Compile Include="Assets\scripts\chargement_jeu.cs" />
+     <Compile Include="Assets\scripts\DeplacerPierre.cs" />
      <Compile Include="Assets\scripts\Dialogue.cs" />
      <Compile Include="Assets\scripts\DialogueManager.cs" />
      <Compile Include="Assets\scripts\Exit.cs" />
+     <Compile Include="Assets\scripts\Expiration.cs" />
      <Compile Include="Assets\scripts\MicrophoneIn.cs" />
      <Compile Include="Assets\scripts\PlayerMovement.cs" />
      <Compile Include="Assets\scripts\SceneLoader.cs" />
      <Compile Include="Assets\scripts\test.cs" />
+     <Compile Include="Assets\scripts\Timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

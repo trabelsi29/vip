@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         float characterVelocity = Mathf.Abs(rb.velocity.x); //renvoyer toujours une valeur positive de la vitesse
         animator.SetFloat("speed", characterVelocity);
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+        if (Input.GetKey(KeyCode.J) && Mathf.Abs(rb.velocity.y) < 0.001f)
         {
             rb.AddForce( new Vector2 (0, 24), ForceMode2D.Impulse);
         }
