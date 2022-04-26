@@ -5,18 +5,36 @@ using UnityEngine.UI;
 
 public class Attaque : MonoBehaviour
 {
-    // Start is called before the first frame update
-  public GameObject air_expirer;
+        //  public float totaltime = 5;
+public GameObject heros;
+    private Animator anim;
 
-    // Update is called once per frame
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
-            if (Input.GetKey(KeyCode.H))
+            if (Input.GetKey(KeyCode.H) )
+
+
+        
      {
-           bool isActive = air_expirer.activeSelf;
-            air_expirer.SetActive(!isActive);
-         // GetComponent< UnityEngine.Animation > ().Play("expiration");
+
+        // totaltime = totaltime - Time.deltaTime;
+          /* bool isActive = air_expirer.activeSelf;
+            air_expirer.SetActive(!isActive);*/
+      //    GetComponent< UnityEngine.Animation > ().Play("expiration");
+  // yield return new WaitForSeconds(5f);
+         //   Debug.Log("Enter");
+          if (anim != null) 
+            {
+       anim.Play("expiration");
+     
+   
+            }
              
      }
+
     }
 }

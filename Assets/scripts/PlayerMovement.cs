@@ -11,6 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public SpriteRenderer spriteRenderer;
     //public float JumpForce = 100;
+
+    //public GameObject heros;
+ 
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
@@ -23,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.J) && Mathf.Abs(rb.velocity.y) < 0.001f)
         {
             rb.AddForce( new Vector2 (0, 24), ForceMode2D.Impulse);
+              animator.Play("JUMP");
         }
     
     }
