@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     public Image timerImage;
     public Text timerText;
     public float totaltime = 5;
+  
+ public GameObject air_expirer;
+
 
 
     // Update is called once per frame
@@ -17,7 +20,8 @@ public class Timer : MonoBehaviour
     {
           if (Input.GetKey(KeyCode.H))
      {
-         
+
+   
         totaltime = totaltime - Time.deltaTime;
 
         if ( totaltime > 0)
@@ -25,18 +29,27 @@ public class Timer : MonoBehaviour
        
         timerText.text = totaltime.ToString("0");
         timerImage.fillAmount -= 1.0f / 5 * Time.deltaTime;
+
+             bool isActive = air_expirer.activeSelf;
+            air_expirer.SetActive(!isActive);
+            
+
      }
      else 
      {
          timerText.text = "5";
          timerImage.fillAmount = 1;
          totaltime = 5;
+
+                     // bool isActive = air_expirer.activeSelf;
+           // air_expirer.SetActive(!isActive);
      }}
      else 
      {
           timerText.text = "5";
          timerImage.fillAmount = 1;
          totaltime = 5;
+
 
      }
         

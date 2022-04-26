@@ -92,6 +92,7 @@
      <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
      <Compile Include="Assets\MicrophoneInputLevel\Scripts\MicrophoneInputLevel.cs" />
      <Compile Include="Assets\scripts\Aide.cs" />
+     <Compile Include="Assets\scripts\Attaque.cs" />
      <Compile Include="Assets\scripts\Bar.cs" />
      <Compile Include="Assets\scripts\BGSoundScript.cs" />
      <Compile Include="Assets\scripts\changeColorText.cs" />
