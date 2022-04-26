@@ -8,6 +8,8 @@ TagManager:
   - pierre
   - Yuzu
   - player
+  - aeria
+  - aeria_recup
   layers:
   - Default
   - TransparentFX

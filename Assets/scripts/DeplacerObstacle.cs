@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine; 
 //using SimpleJSON;
 
-public class DeplacerPierre : MonoBehaviour {
+public class DeplacerObstacle : MonoBehaviour {
 
  public Vector3 pointA;
  public Vector3 pointB;
@@ -12,7 +12,7 @@ public class DeplacerPierre : MonoBehaviour {
  public bool keyHit = false;
  
      public GameObject personnage;
-    public GameObject pierre;
+    public GameObject obstacle;
     [SerializeField] int time;
 
  void Start()
@@ -21,7 +21,7 @@ public class DeplacerPierre : MonoBehaviour {
  // Update is called once per frame
  void Update()
  {
-     if((Vector3.Distance (personnage.transform.position, pierre.transform.position) < 5) && (Input.GetKeyDown(KeyCode.H)))
+     if((Vector3.Distance (personnage.transform.position, obstacle.transform.position) < 5) && (Input.GetKeyDown(KeyCode.H)))
      {
 
      
