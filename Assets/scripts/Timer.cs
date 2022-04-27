@@ -11,10 +11,6 @@ public class Timer : MonoBehaviour
     public Text timerText;
     public float totaltime = 5;
   
-// public GameObject air_expirer;
-   
-
-    // Update is called once per frame
     void Update()
     {
           if (Input.GetKey(KeyCode.H))
@@ -29,31 +25,18 @@ public class Timer : MonoBehaviour
         timerText.text = totaltime.ToString("0");
         timerImage.fillAmount -= 1.0f / 5 * Time.deltaTime;
 
-          //   bool isActive = air_expirer.activeSelf;
-       //     air_expirer.SetActive(!isActive);
-            
-
      }
      else 
      {
          timerText.text = "5";
          timerImage.fillAmount = 1;
          totaltime = 5;
-                  
-       
-       
-     
-   
-            
-
-                     // bool isActive = air_expirer.activeSelf;
-           // air_expirer.SetActive(!isActive);
      }}
      else 
      {
           timerText.text = "5";
-         timerImage.fillAmount = 1;
-         totaltime = 5;
+          timerImage.fillAmount = 1;
+          totaltime = 5;
         
 
      }

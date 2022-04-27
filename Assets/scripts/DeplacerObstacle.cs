@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic; 
 using UnityEngine; 
+using UnityEngine.UI;
 //using SimpleJSON;
 
 public class DeplacerObstacle : MonoBehaviour {
@@ -15,9 +16,7 @@ public class DeplacerObstacle : MonoBehaviour {
     public GameObject obstacle;
     [SerializeField] int time;
 
- void Start()
- {
- }
+    public Text chrono;
  // Update is called once per frame
  void Update()
  {
@@ -28,7 +27,7 @@ public class DeplacerObstacle : MonoBehaviour {
          keyHit = true;
          
      }
-     if (keyHit == true)
+     if ((keyHit == true) && ((chrono.text == "2") || (chrono.text =="1")))
      {
                    
                    StartCoroutine(Action());
@@ -46,10 +45,10 @@ public class DeplacerObstacle : MonoBehaviour {
 
    IEnumerator Action ()
 {
-    yield return new WaitForSeconds(5);
+    yield return new WaitForSeconds(2);
 
              var change = maxSpeed * Time.deltaTime;
-         transform.position = Vector3.MoveTowards(transform.position, pointB, change);
+            transform.position = Vector3.MoveTowards(transform.position, pointB, change);
 }
    
      }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Cette classe Attaque considère le souffle : l'utilisation du pouvoir d'expiration
 public class Attaque : MonoBehaviour
 {
         //  public float totaltime = 5;

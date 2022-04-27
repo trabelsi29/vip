@@ -21,6 +21,6 @@ IEnumerator ChangeAfter2SecondsCoroutine()
 
 
     //And load the scene
-    Application.LoadLevel("Mission1");  //<-- This is the correct name of the scene
+    Application.LoadLevel("Mission1");  //Open the first mission
 }
 }

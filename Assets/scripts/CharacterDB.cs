@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Menu pour choisir une relique
+
 [CreateAssetMenu]
 public class CharacterDB : ScriptableObject
 {
@@ -9,7 +12,7 @@ public class CharacterDB : ScriptableObject
 
     public int CharacterCount{
         get{
-            return character.Length; //retourne nombre de personnages
+            return character.Length; //retourne le nombre de reliques 
         }
     }
 public Character GetCharacter(int index)

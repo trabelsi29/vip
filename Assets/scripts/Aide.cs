@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Script pour afficher la fenètre d'aide
 public class Aide : MonoBehaviour
 {
-        // Start is called before the first frame update
+       
     
     public GameObject aide;
 
