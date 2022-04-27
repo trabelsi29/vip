@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public SpriteRenderer spriteRenderer;
     //public float JumpForce = 100;
-
+    
     //public GameObject heros;
  
 

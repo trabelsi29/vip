@@ -10,6 +10,8 @@ TagManager:
   - player
   - aeria
   - aeria_recup
+  - bloc_sol
+  - game_over
   layers:
   - Default
   - TransparentFX

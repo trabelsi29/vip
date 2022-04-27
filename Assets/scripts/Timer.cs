@@ -13,9 +13,6 @@ public class Timer : MonoBehaviour
   
 // public GameObject air_expirer;
    
-public GameObject heros;
-  
-
 
     // Update is called once per frame
     void Update()
